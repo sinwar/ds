@@ -4,6 +4,7 @@
 	*/
 #include<stdio.h>
 #include<conio.h>
+//function for bubble sorting
 void bubblesort(int *a,int n)
 {
 	int i,j,temp;
@@ -17,9 +18,11 @@ void bubblesort(int *a,int n)
 				temp=a[i];
 				a[i]=a[j];
 				a[j]=temp;
+				//variable t will change its value whenever swapping occurs
 				t++;
 			}
 		}
+		//break the loop if no swapping is there
 		if(t==0)
 		break;
 	}
@@ -32,6 +35,7 @@ int main()
 	printf("Enter the elements of array\n");
 	for(i=0;i<n;i++)
 	scanf("%d",&a[i]);
+	//calling bubblesort function
 	bubblesort(a,n);
 	printf("sorted elements by bubblesort\n");
 	for(i=0;i<n;i++)
