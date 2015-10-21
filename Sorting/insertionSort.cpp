@@ -33,7 +33,7 @@ int main()
 	scanf("%d",&a[i]);
 	//call the insertionSort function
 	insertionSort(a,n);
-	printf("sorted elements by bubblesort\n");
+	printf("sorted elements by insertionsort\n");
 	for(i=0;i<n;i++)
 	printf("%d ",a[i]);
 	return 0;
