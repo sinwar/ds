@@ -1,3 +1,7 @@
+/*
+	SINWAR PREM
+	premsinwar4@gmail.com
+*/
 #include<stdio.h>
 #include<stdlib.h>
 //node 
