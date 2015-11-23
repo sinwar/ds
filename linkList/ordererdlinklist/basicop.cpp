@@ -81,8 +81,8 @@ void insert()
 			}
 			else
 			{
-				h->next=prev->next;
-				prev->next=h;
+				h->next=temp->next;
+				temp->next=h;
 			}
 		}
 	}
