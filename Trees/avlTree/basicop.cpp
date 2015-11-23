@@ -5,9 +5,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
-//avl binary operation-(avl tree is a type of binary tree which height remains constant after insertoin and deletion)
+//avl binary operation-(avl tree is a type of binary tree which height remains O(logn) after insertoin and deletion)
 struct node{
-	int data;
+	int data,height;//required for AVL
 	struct node *left;
 	struct noded *right;
 };
@@ -42,3 +42,9 @@ void postorder(struct node* root)
 		printf("%d\n ",root->data);
 	}
 }
+
+
+
+//insertion in avl tree
+//first insert the node for standard BST then rebalance using left rotation and right rotation
+
